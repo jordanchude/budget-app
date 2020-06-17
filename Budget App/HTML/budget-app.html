@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <title>Jordan's Budget App</title>
+       <!--  <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <link rel="stylesheet" type="text/css" href="/Users/jordan/Documents/TechHire Bootcamp/Self-Study/Projects/Budget App/CSS/all.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/Users/jordan/Documents/TechHire Bootcamp/Self-Study/Projects/Budget App/CSS/fontawesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/Users/jordan/Documents/TechHire Bootcamp/Self-Study/Projects/Budget App/CSS/budget-app-style.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>JORDAN'S BUDGET APP</h1>
+        </header>
+        <div class="container">
+            <section class="prompts">
+                <div class="budget-prompt">
+                    <label for="budget">Please Enter Your Budget</label><br />
+                    <input type="number" id="budget" name="budget" value="">
+                    <button form="" id="budget-button">Calculate</button>
+                </div>
+                <div class="expense-prompt">
+                    <div class="expense-input">
+                        <label for="expense-description">Please Enter Your Expense</label>
+                        <input type="text" id="expense-description" name="expense-description" placeholder="New laptop">
+                    </div>
+                    <div class="expense-input">
+                        <label for="expense-amount">Please Enter Your Expense Amount</label>
+                        <input type="number" id="expense-amount" name="expense-amount" value="">
+                    </div>
+                    
+                    <button id="expense-submit">Add Expense</button>
+                </div>
+            </section>
+            <section class="log">
+                <div class="panel budget-panel">
+                    <h2>BUDGET</h2>
+                    <i class="fas fa-money-bill-alt fa-3x"></i>
+                    <ul>
+                        <li id="budgetNumber">0</li>
+                    </ul>
+                    <div class="expense-description-panel">
+                        <h3>Expense Title</h3>
+                        <ul id="expense-items"></ul>
+                    </div>
+                </div>
+                <div class="panel expense-panel">
+                    <h2>EXPENSES</h2>
+                    <i class="far fa-credit-card fa-3x"></i>
+                    <ul>
+                        <li id="total-expenses">0</li>
+                    </ul>
+                    <div>
+                        <h3>Expense Amount</h3>
+                        <ul id="expense-item-amounts"></ul>
+                    </div>
+                </div>
+                <div class="panel">
+                    <h2>BALANCE</h2>
+                    <i class="fas fa-dollar-sign fa-3x"></i>
+                    <ul id="total-balance">
+                        <li>0</li>
+                    </ul>
+                </div>
+                <!-- <div class="expense-description-panel">
+                    <h3>Expense Title</h3>
+                    <ul id="expense-items"></ul>
+                </div> -->
+                <!-- <div>
+                    <h3>Expense Amount</h3>
+                    <ul id="expense-item-amounts"></ul>
+                </div> -->
+            </section>
+        </div>
+        <script src="/Users/jordan/Documents/TechHire Bootcamp/Self-Study/Projects/Budget App/JS/budget-app-index.js" async defer></script>
+    </body>
+</html>

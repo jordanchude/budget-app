@@ -1,0 +1,53 @@
+li {
+    list-style: none;
+}
+
+.budget-prompt {
+    display: inline-block;
+    border: 2px solid red;
+    padding: 40px;
+    font-size: 20px;
+}
+
+input {
+    width: 300px;
+}
+
+.expense-prompt {
+    border: 2px solid red;
+    font-size: 20px;
+    padding: 40px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.prompts {
+    display: flex;
+    flex-direction: column;
+    width: 400px; 
+}
+
+.expense-input {
+    margin: 20px 0px 20px 0px;
+}
+
+.log {
+    display: flex;
+    flex-direction: row;
+}
+
+.panel {
+    margin: 0px 30px 0px 30px;
+    text-align: center;
+}
+
+.panel ul {
+    padding-left: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
